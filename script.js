@@ -45,3 +45,41 @@ if (userAccess == "shoe") {
 } else {
   alert("You cannot enter");
 }
+
+//Write a Prompt that tells a user if they are eligible to vote
+
+const userAge = prompt("Enter your age");
+if (userAge >= 18) {
+  alert(`Your age is ${userAge} and you can go on to vote`);
+} else {
+  alert(`Sorry, you are ${userAge} and you are not eligible to vote`);
+}
+
+//Create a system that tells a User if a number is even or odd
+const newNum = parseInt(prompt("Enter a number"));
+if (newNum % 2 == 0) {
+  alert("Number is even");
+} else if (newNum == 1) {
+  alert("Number is neither even nor odd ");
+}
+alert("Number is odd");
+
+//Write a prompt that tells a User which is greater of three numbers
+const numOne = parseInt(prompt("Enter the first number"))
+const numTwo = parseInt(prompt("Enter the second number"))
+const numThree = parseInt(prompt("Enter the third number"))
+if (numOne > numTwo && numOne > numThree) {
+    alert(`${numOne} is greater than ${numTwo} and ${numThree}`)
+} else if (numTwo > numOne && numTwo > numThree) {
+    alert(`${numTwo} is greater than ${numOne} and ${numThree}`)
+} else if (numThree > numOne && numThree > numTwo) {
+    alert(`${numThree} is greater than ${numOne} and ${numTwo}`)
+}
+
+//Write a prompt that tells a User  if the number entered is positive or negative
+const newnewNum = parseInt(prompt("Enter newnewNum"))
+if (newnewNum < 0) {
+    alert(`${newnewNum} is a negative number`)
+} else if (newnewNum > 0) {
+    alert(`${newnewNum} is a positive number`)
+}
