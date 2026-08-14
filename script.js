@@ -83,3 +83,28 @@ if (newnewNum < 0) {
 } else if (newnewNum > 0) {
     alert(`${newnewNum} is a positive number`)
 }
+
+//Assignment
+//Program that Calculates ticket prices based on age
+const ageTwo = prompt("Enter your current age")
+if (ageTwo < 12 ) {
+  alert("You are to pay a ticket price of $5")
+} else if (ageTwo < 18 && ageTwo >= 12) {
+  alert("You are to pay a ticket price of $10")
+} else if (ageTwo < 60 && ageTwo >= 18) {
+  alert("You are to pay a ticket price of $20")
+} else if (ageTwo > 60) {
+  alert("You are to pay a ticket price of $15")
+} else {
+  alert("Your age category is not included to pay a ticket price")
+}
+
+//Program that Calculates a discount based on purchase amount
+const discount = prompt("Enter your purchase amount")
+if (discount >= 100) {
+  alert("You have a discount of $20")
+} else if (discount >=50 && discount != 100) {
+  alert("You have a discount of $10")
+} else {
+  alert("You have a discount of $0")
+}
