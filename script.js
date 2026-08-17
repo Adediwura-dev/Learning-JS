@@ -87,7 +87,7 @@ if (newnewNum < 0) {
 //Assignment
 //Program that Calculates ticket prices based on age
 const ageTwo = prompt("Enter your current age")
-if (ageTwo < 12 ) {
+if (ageTwo < 12 && ageTwo > 0 ){
   alert("You are to pay a ticket price of $5")
 } else if (ageTwo < 18 && ageTwo >= 12) {
   alert("You are to pay a ticket price of $10")
@@ -96,7 +96,7 @@ if (ageTwo < 12 ) {
 } else if (ageTwo > 60) {
   alert("You are to pay a ticket price of $15")
 } else {
-  alert("Your age category is not included to pay a ticket price")
+  alert("Enter a correct age to be eligible to pay a ticket price")
 }
 
 //Program that Calculates a discount based on purchase amount
