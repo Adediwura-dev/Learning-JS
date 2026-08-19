@@ -31,3 +31,21 @@ console.log(myFruits)
 console.log(myFruits.join(" "))
 console.log(myFruits.indexOf("pawpaw"))
 console.log(myFruits.includes("orange"))
+
+const myStudents = [{name : "Bushra", age : 20, ms : "single"},
+  {name : "Fatiah", age : 21, ms : "single"},
+  {name : "Favour", age : 22, ms : "engaged"},
+  {name : "Bola", age : 23, ms : "engaged"},
+  {name : "Mariam"}
+]
+
+// myStudents.forEach((stdName, index) => {
+//   console.log(stdName)
+// })
+//value, index
+//.Map gives a new version of every item
+myStudents.map((allData, index) => {
+  console.log(allData.name)
+})
+
+
