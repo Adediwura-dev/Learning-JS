@@ -36,7 +36,8 @@ const myStudents = [{name : "Bushra", age : 20, ms : "single"},
   {name : "Fatiah", age : 21, ms : "single"},
   {name : "Favour", age : 22, ms : "engaged"},
   {name : "Bola", age : 23, ms : "engaged"},
-  {name : "Mariam"}
+  {name : "Mariam", age : 24, ms : "married"},
+  {name : "Ozioma", age : 25, ms : "married"}
 ]
 
 // myStudents.forEach((stdName, index) => {
@@ -48,4 +49,18 @@ myStudents.map((allData, index) => {
   console.log(allData.name)
 })
 
+const olderStudents = myStudents.filter((students) => {
+  return students.age > 20
+})
+console.log(olderStudents)
+
+const marriedStudents = myStudents.filter((std) => {
+  return std.ms === "married"
+})
+console.log(marriedStudents)
+
+const findStudent = myStudents.find((students) => {
+  return students.name === "Mariam"
+})
+console.log(findStudent)
 
