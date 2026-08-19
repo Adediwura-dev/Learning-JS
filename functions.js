@@ -23,3 +23,11 @@ ageTwo = (newAge) => {
   console.log(newAge);
 };
 ageTwo(50);
+
+const myFruits = ["mango", "pawpaw", "apple", "pineapple"]
+console.log(myFruits)
+myFruits.splice(2, 1)
+console.log(myFruits)
+console.log(myFruits.join(" "))
+console.log(myFruits.indexOf("pawpaw"))
+console.log(myFruits.includes("orange"))
