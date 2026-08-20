@@ -64,3 +64,9 @@ const findStudent = myStudents.find((students) => {
 })
 console.log(findStudent)
 
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+
+document.getElementById("myButton").addEventListener("click", displayDate);
+
